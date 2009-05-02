@@ -1,4 +1,5 @@
+# $Header: $
+
 # James Rowe <jnrowe@gmail.com> (2 May 2009)
 # Invalid license [258673]
 dev-python/pysvg
-
