@@ -1,8 +1,0 @@
-* Matt Leighton (mleighy@intranet) wrote:
-> I've added the config file at the root, and documentation about how to
-> use it.
-
-  Thanks again.
-
-  [Note for the future, the direct New -> Fixed commit bug was fixed
-last year so you could have used a single commit.]
