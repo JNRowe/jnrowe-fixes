@@ -10,6 +10,22 @@ email_ or file an issue_.  Locally, bugs are managed with ditz_, so if
 you're working with a clone of the repository you can report, list and
 fix bugs using ``dev-util/ditz`` from jnrowe-misc_.
 
+``oilman`` integration
+----------------------
+
+If you use ``oilman`` to manage your repositories you can call::
+
+    # oilman --add-repository jnrowe::fixes
+
+Or, if you'd rather use the rsync_ mirror::
+
+    # oilman --method=rsync --add-repository jnrowe::fixes
+
+To sync the repository::
+
+    # oilman --sync jnrowe::fixes # Sync this repository only
+    # oilman --sync all # or sync all repositories
+
 ``layman`` integration
 ----------------------
 
@@ -59,3 +75,4 @@ package database.
 .. _jnrowe-misc: http://github.com/JNRowe/misc-overlay/tree
 .. _layman: http://layman.sourceforge.net
 .. _eix: http://eix.sourceforge.net
+.. _rsync: http://rsync.samba.org/
