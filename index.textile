@@ -19,6 +19,8 @@ Up to date installation instructions are contained within the repositories @READ
 
 h2. Packages
 
+* @app-arch@
+    ** "@ipkg-utils@":http://www.openembedded.org/ - app-arch/ipkg-utils: Verify and potentially improve Python-related code [ "Bug #_308299_":http://bugs.gentoo.org/show_bug.cgi?id=308299 ]
 * @app-vim@
     ** "@colorsel@":http://www.vim.org/scripts/script.php?script_id=927 - Keyworded, so a version that works with "vim":http://www.vim.org/ v7 is available. [ "Bug #_281839_":http://bugs.gentoo.org/show_bug.cgi?id=281829 ]
     ** "@foldutil@":http://www.vim.org/scripts/script.php?script_id=158 - Updated dependency on @genutils@, so it works. [ "Bug #_270300_":http://bugs.gentoo.org/show_bug.cgi?id=270300 ]
