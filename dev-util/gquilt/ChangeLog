@@ -2,6 +2,9 @@
 # Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
 # $Header: /var/cvsroot/gentoo-x86/dev-util/gquilt/ChangeLog,v 1.16 2009/04/25 21:35:37 patrick Exp $
 
+  20 Jun 2010; James Rowe <jnrowe@gmail.com> gquilt-0.21.ebuild:
+  Removed python_version calls.
+
   20 Jun 2010; James Rowe <jnrowe@gmail.com> -gquilt-0.18.ebuild,
   -gquilt-0.19.ebuild, -gquilt-0.20.ebuild:
   Removed stale ebuilds.
