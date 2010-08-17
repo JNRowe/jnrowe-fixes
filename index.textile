@@ -25,7 +25,7 @@ h2. Packages
     ** "@colorsel@":http://www.vim.org/scripts/script.php?script_id=927 - Keyworded, so a version that works with "vim":http://www.vim.org/ v7 is available. [ "Bug #_281839_":http://bugs.gentoo.org/show_bug.cgi?id=281829 ]
     ** "@foldutil@":http://www.vim.org/scripts/script.php?script_id=158 - Updated dependency on @genutils@, so it works. [ "Bug #_270300_":http://bugs.gentoo.org/show_bug.cgi?id=270300 ]
 * @dev-python@
-    ** "@pycipher@":http://pycipher.sourceforge.net - Ebuild that works. [ "Bug #_258676_":http://bugs.gentoo.org/show_bug.cgi?id=258676 ]
+    ** "@pycipher@":http://pycipher.sourceforge.net - License fix. [ "Bug #_258676_":http://bugs.gentoo.org/show_bug.cgi?id=258676 ]
 * @dev-util@
     ** "@gquilt@":http://users.bigpond.net.au/Peter-Williams/ - Optional "mercurial":http://mercurial.selenic.com dependency, so @quilt@ isn't installed. [ "Bug #_196523_":http://bugs.gentoo.org/show_bug.cgi?id=196523 ]
 
