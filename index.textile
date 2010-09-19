@@ -11,7 +11,7 @@ h2. Introduction
 
 Packages with fixes submitted to the "Gentoo BTS":http://bugs.gentoo.org that have yet to be applied.  Its main purpose is my staging ground, so I can separately manage upstreamed fixes.
 
-If you find any problems with ebuilds in this overlay either drop me an "email":mailto:jnrowe@gmail.com or file an "issue":http://github.com/JNRowe/jnrowe-fixes/issues.  Locally, bugs are managed with "ditz":http://ditz.rubyforge.org/, so if you're working with a clone of the repository you can report, list and fix bugs using @dev-util/ditz@ from "jnrowe-misc":http://github.com/JNRowe/misc-overlay/tree.
+If you find any problems with ebuilds in this overlay either file an "issue":http://github.com/JNRowe/jnrowe-fixes/issues or drop me an "email":mailto:jnrowe@gmail.com.
 
 h2. Installation
 
