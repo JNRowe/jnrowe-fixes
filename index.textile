@@ -19,8 +19,6 @@ Up to date installation instructions are contained within the repositories @READ
 
 h2. Packages
 
-* @app-arch@
-    ** "@ipkg-utils@":http://www.openembedded.org/ - app-arch/ipkg-utils: Verify and potentially improve Python-related code [ "Bug #_308299_":http://bugs.gentoo.org/show_bug.cgi?id=308299 ]
 * @dev-util@
     ** "@gquilt@":http://users.bigpond.net.au/Peter-Williams/ - Optional "mercurial":http://mercurial.selenic.com dependency, so @quilt@ isn't installed. [ "Bug #_196523_":http://bugs.gentoo.org/show_bug.cgi?id=196523 ]
 
