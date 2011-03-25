@@ -1,0 +1,183 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Installation &mdash; fixes-overlay documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="fixes-overlay documentation" href="index.html" />
+    <link rel="next" title="Packages" href="packages.html" />
+    <link rel="prev" title="Welcome to misc-overlay’s documentation!" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="packages.html" title="Packages"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to misc-overlay’s documentation!"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">fixes-overlay documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="oilman-integration">
+<h2><tt class="docutils literal"><span class="pre">oilman</span></tt> integration<a class="headerlink" href="#oilman-integration" title="Permalink to this headline">¶</a></h2>
+<p>If you use <strong class="program">oilman</strong> to manage your repositories you can call:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="c"># oilman --add-repository jnrowe::fixes</span>
+</pre></div>
+</div>
+<p>Or, if you&#8217;d rather use the <a class="reference external" href="http://rsync.samba.org/">rsync</a> mirror:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="c"># oilman --method=rsync --add-repository jnrowe::fixes</span>
+</pre></div>
+</div>
+<p>To sync the repository:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="c"># oilman --sync jnrowe::fixes # Sync this repository only</span>
+<span class="c"># oilman --sync all # or sync all repositories</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="layman-integration">
+<h2><tt class="docutils literal"><span class="pre">layman</span></tt> integration<a class="headerlink" href="#layman-integration" title="Permalink to this headline">¶</a></h2>
+<p>If you use <a class="reference external" href="http://layman.sourceforge.net">layman</a> to sync your repositories you can easily add this repository
+to the supported list.</p>
+<p>If you&#8217;re using <strong class="program">layman</strong> v1.2.4 or newer, then the
+<tt class="file docutils literal"><span class="pre">support/layman2.xml</span></tt> should be added to the <tt class="docutils literal"><span class="pre">overlays</span></tt> section of
+<tt class="file docutils literal"><span class="pre">/etc/layman/layman.conf</span></tt>, for example:</p>
+<div class="highlight-python"><pre>overlays  : http://www.gentoo.org/proj/en/overlays/repositories.xml
+            file:///var/lib/repos/jnrowe-fixes/support/layman2.xml</pre>
+</div>
+<p>If you&#8217;re using <strong class="program">layman</strong> v1.2.3 or earlier, then
+<tt class="file docutils literal"><span class="pre">support/layman.xml</span></tt> should be added to the <tt class="docutils literal"><span class="pre">overlays</span></tt> section of
+<tt class="file docutils literal"><span class="pre">/etc/layman/layman.conf</span></tt>, for example:</p>
+<div class="highlight-python"><pre>overlays  : http://www.gentoo.org/proj/en/overlays/layman-global.txt
+            file:///var/lib/repos/jnrowe-fixes/support/layman.xml</pre>
+</div>
+<p>Then you can add the overlay using <strong class="command">layman</strong>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="c"># layman -a jnrowe-fixes</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You may need to run <strong class="command">layman &#8211;fetch</strong> or perform a sync
+operation before this command will work.</p>
+</div>
+<p>To sync the repository you can use <strong class="command">layman</strong> directly, either
+syncing just this overlay or all your overlays at once:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="c"># layman -s jnrowe-fixes # Sync just jnrowe-fixes</span>
+<span class="c"># layman -S # or sync all layman managed overlays</span>
+</pre></div>
+</div>
+<p>Or if you&#8217;re an <a class="reference external" href="http://eix.sourceforge.net">eix</a> user you can use <strong class="command">eix-sync</strong> to update
+the repositories and the <strong class="program">eix</strong> database at the same time, first tell
+<strong class="command">eix-sync</strong> to update the repository:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="c"># echo &quot;jnrowe-fixes&quot; &gt;&gt;/etc/eix-sync.conf # Sync just jnrowe-fixes</span>
+<span class="c"># echo &quot;*&quot; &gt;&gt;/etc/eix-sync.conf # or sync all layman managed overlays</span>
+</pre></div>
+</div>
+<p>Finally, call <strong class="command">eix-sync</strong> to update the specified repositories
+and <strong class="program">eix</strong> package database.</p>
+</div>
+<div class="section" id="manual-installation">
+<h2>Manual installation<a class="headerlink" href="#manual-installation" title="Permalink to this headline">¶</a></h2>
+<p>To manually manage this overlay just clone the <a class="reference external" href="https://github.com/JNRowe/fixes-overlay/">git repository</a> to a location
+accessible by <strong class="program">portage</strong>, and edit <tt class="file docutils literal"><span class="pre">/etc/make.conf</span></tt>&#8216;s
+<span class="target" id="index-0"></span><tt class="xref std std-envvar docutils literal"><span class="pre">PORTDIR_OVERLAY</span></tt> setting.  See the <em class="manpage">make.conf(5)</em> manual page
+for details.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Installation</a><ul>
+<li><a class="reference internal" href="#oilman-integration"><tt class="docutils literal"><span class="pre">oilman</span></tt> integration</a></li>
+<li><a class="reference internal" href="#layman-integration"><tt class="docutils literal"><span class="pre">layman</span></tt> integration</a></li>
+<li><a class="reference internal" href="#manual-installation">Manual installation</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Welcome to misc-overlay&#8217;s documentation!</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="packages.html"
+                        title="next chapter">Packages</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/installation.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="packages.html" title="Packages"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to misc-overlay’s documentation!"
+             >previous</a> |</li>
+        <li><a href="index.html">fixes-overlay documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, James Rowe.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>
