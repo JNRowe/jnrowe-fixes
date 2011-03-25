@@ -8,7 +8,9 @@
 Welcome to fixes-overlay's documentation!
 =========================================
 
-Packages that don't naturally fit in to my other themed overlays.
+Packages with fixes submitted to the `Gentoo BTS`_ that have yet to be applied.
+Its main purpose is my staging ground, so I can separately manage upstreamed
+fixes.
 
 If you find any problems with ebuilds in this overlay either file an issue_ or
 drop me an email_.
@@ -33,6 +35,7 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`search`
 
+.. _Gentoo BTS: http://bugs.gentoo.org
 .. _issue: https://github.com/JNRowe/fixes-overlay/issues
 .. _email: jnrowe@gmail.com
 .. _viewed online: https://github.com/JNRowe/fixes-overlay/blob/master/README.rst
