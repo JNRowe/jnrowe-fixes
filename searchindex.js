@@ -45,7 +45,7 @@ Search.setIndex({
         www: 1,
         set: 1,
         quilt: 2,
-        jnrow: [5, 1],
+        jnrow: [5, 0, 1],
         some: 4,
         sync: 1,
         see: [1, 4],
@@ -62,7 +62,7 @@ Search.setIndex({
         state: 0,
         version: 2,
         proj: 1,
-        overlai: [5, 0, 3, 1, 4],
+        overlai: [0, 3, 1, 4],
         net: 2,
         bird: 4,
         integr: [0, 1],
@@ -70,7 +70,7 @@ Search.setIndex({
         run: [5, 1],
         ast: 4,
         layman2: 1,
-        repositori: [1, 4],
+        repositori: [0, 1, 4],
         org: 1,
         stage: 0,
         reflect: 0,
@@ -138,7 +138,6 @@ Search.setIndex({
         tabl: 0,
         tarbal: 5,
         mai: 1,
-        welcom: 0,
         lib: 1,
         rather: 1,
         make: 1,
@@ -175,7 +174,7 @@ Search.setIndex({
         fallback: 3
     },
     objtypes: {},
-    titles: ["Welcome to fixes-overlay&#8217;s documentation!", "Installation", "<tt class=\"docutils literal docutils literal\"><span class=\"pre\">dev-util</span></tt>", "Contact", "Contributors", "Download", "Packages"],
+    titles: ["jnrowe-fixes Gentoo repository", "Installation", "<tt class=\"docutils literal docutils literal\"><span class=\"pre\">dev-util</span></tt>", "Contact", "Contributors", "Download", "Packages"],
     objnames: {},
     filenames: ["index", "installation", "packages/dev-util", "contact", "thanks", "download", "packages"]
 })

@@ -6,7 +6,7 @@ with Git_ by running:
 
 .. code-block:: sh
 
-    $ git clone git://github.com/JNRowe/fixes-overlay
+    $ git clone git://github.com/JNRowe/jnrowe-fixes.git
 
-.. _tarball: https://github.com/JNRowe/fixes-overlay/tarball/master
+.. _tarball: https://github.com/JNRowe/jnrowe-fixes/tarball/master
 .. _Git: http://git-scm.com
