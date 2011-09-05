@@ -72,5 +72,5 @@ for details.
 .. _rsync: http://rsync.samba.org/
 .. _layman: http://layman.sourceforge.net
 .. _eix: http://eix.sourceforge.net
-.. _git repository: https://github.com/JNRowe/fixes-overlay/
+.. _git repository: https://github.com/JNRowe/jnrowe-fixes/
 

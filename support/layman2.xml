@@ -6,14 +6,14 @@
       <email>jnrowe@gmail.com</email>
       <name>James Rowe</name>
     </owner>
-    <homepage>http://github.com/JNRowe/fixes-overlay/</homepage>
+    <homepage>http://github.com/JNRowe/jnrowe-fixes/</homepage>
     <description>
       Packages with fixes submitted to the Gentoo BTS by JNRowe that have yet to
       be applied.  Its main purpose is a staging ground, to separately
       manage upstreamed fixes.
     </description>
-    <source type="git">git://github.com/JNRowe/fixes-overlay.git</source>
-    <feed>http://github.com/feeds/JNRowe/commits/fixes-overlay/master</feed>
+    <source type="git">git://github.com/JNRowe/jnrowe-fixes.git</source>
+    <feed>http://github.com/feeds/JNRowe/commits/jnrowe-fixes/master</feed>
   </repo>
 </layman>
 

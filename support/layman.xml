@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <layman>
   <overlay type="git" status="unoffficial" name="jnrowe-fixes"
-    contact="jnrowe@gmail.com" src="git://github.com/JNRowe/fixes-overlay.git">
-    <link>http://github.com/JNRowe/fixes-overlay/</link>
+    contact="jnrowe@gmail.com" src="git://github.com/JNRowe/jnrowe-fixes.git">
+    <link>http://github.com/JNRowe/jnrowe-fixes/</link>
     <description>
       Packages with fixes submitted to the Gentoo BTS by JNRowe that have yet to
       be applied.  Its main purpose is a staging ground, to separately

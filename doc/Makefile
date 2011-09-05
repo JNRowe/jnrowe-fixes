@@ -72,17 +72,17 @@ qthelp:
 	@echo
 	@echo "Build finished; now you can run "qcollectiongenerator" with the" \
 	      ".qhcp project file in $(BUILDDIR)/qthelp, like this:"
-	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/fixes-overlay.qhcp"
+	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/jnrowe-fixes.qhcp"
 	@echo "To view the help file:"
-	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/fixes-overlay.qhc"
+	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/jnrowe-fixes.qhc"
 
 devhelp:
 	$(SPHINXBUILD) -b devhelp $(ALLSPHINXOPTS) $(BUILDDIR)/devhelp
 	@echo
 	@echo "Build finished."
 	@echo "To view the help file:"
-	@echo "# mkdir -p $$HOME/.local/share/devhelp/fixes-overlay"
-	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/fixes-overlay"
+	@echo "# mkdir -p $$HOME/.local/share/devhelp/jnrowe-fixes"
+	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/jnrowe-fixes"
 	@echo "# devhelp"
 
 epub:

@@ -1,5 +1,5 @@
-fixes-overlay
-=============
+jnrowe-fixes
+============
 
 Packages with fixes submitted to the `Gentoo BTS`_ that have yet to be
 applied.  Its main purpose is my staging ground, so I can separately
