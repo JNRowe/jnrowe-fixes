@@ -4,14 +4,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
+
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
     <title>jnrowe-fixes Gentoo repository &mdash; jnrowe-fixes documentation</title>
+    
     <link rel="stylesheet" href="_static/cloud.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="#" type="text/css" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Noticia+Text|Open+Sans|Droid+Sans+Mono" type="text/css" />
+    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '',
@@ -24,9 +27,11 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/toggle_sections.js"></script>
+    <script type="text/javascript" src="_static/jquery.cookie.js"></script>
+    <script type="text/javascript" src="_static/cloud.js"></script>
     <link rel="top" title="jnrowe-fixes documentation" href="#" />
     <link rel="next" title="Installation" href="installation.html" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <div class="relbar-top">
@@ -39,8 +44,8 @@
              accesskey="I">index</a></li>
         <li class="right" >
           <a href="installation.html" title="Installation"
-             accesskey="N">next</a> |</li>
-    <li><a href="#">jnrowe-fixes Documentation</a> &raquo; </li>
+             accesskey="N">next</a> &nbsp; &nbsp;</li>
+    <li><a href="#">jnrowe-fixes documentation</a> &raquo;</li>
  
       </ul>
     </div>
@@ -54,12 +59,25 @@
             
   <div class="section" id="jnrowe-fixes-gentoo-repository">
 <span id="jnrowe-fixes-label"></span><h1>jnrowe-fixes Gentoo repository<a class="headerlink" href="#jnrowe-fixes-gentoo-repository" title="Permalink to this headline">¶</a></h1>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This repository is unmaintained as - like many others - I&#8217;ve completely lost
+interest in submitting fixes to Gentoo.  If you&#8217;re inside the EADS firewall
+you&#8217;ll find fixes against upstream&#8217;s tree in the shared <tt class="docutils literal"><span class="pre">gentoo-fixes</span></tt>
+repository.</p>
+</div>
 <p>Packages with fixes submitted to the <a class="reference external" href="http://bugs.gentoo.org">Gentoo BTS</a> that have yet to be applied.
 Its main purpose is my staging ground, so I can separately manage upstreamed
 fixes.</p>
 <p>If you find any problems with ebuilds in this overlay either file an <a class="reference external" href="https://github.com/JNRowe/jnrowe-fixes/issues">issue</a> or
 drop me an <a class="reference external" href="mailto:jnrowe&#37;&#52;&#48;gmail&#46;com">email</a>.</p>
-<p>This documentation reflects the overlay state as of 2011-09-05.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This repository uses thin manifests, which requires a moderately recent
+version of <tt class="docutils literal"><span class="pre">portage</span></tt> to function correctly(2.1.10.18 or newer).  Using
+older versions is not supported!</p>
+</div>
+<p>This documentation reflects the overlay state as of 2013-01-10.</p>
 </div>
 <div class="section" id="contents">
 <h1>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h1>
@@ -71,8 +89,7 @@ drop me an <a class="reference external" href="mailto:jnrowe&#37;&#52;&#48;gmail
 <li class="toctree-l2"><a class="reference internal" href="installation.html#manual-installation">Manual installation</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="packages.html">Packages</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="packages/dev-util.html"><tt class="docutils literal"><span class="pre">dev-util</span></tt></a></li>
+<li class="toctree-l1"><a class="reference internal" href="packages.html">Packages</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="thanks.html">Contributors</a><ul>
@@ -100,6 +117,7 @@ drop me an <a class="reference external" href="mailto:jnrowe&#37;&#52;&#48;gmail
       </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
+  <div class="sphinxlocaltoc">
   <h3><a href="#">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">jnrowe-fixes Gentoo repository</a></li>
@@ -109,6 +127,7 @@ drop me an <a class="reference external" href="mailto:jnrowe&#37;&#52;&#48;gmail
 <li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
 </ul>
 
+  </div>
   <h4>Next topic</h4>
   <p class="topless"><a href="installation.html"
                         title="next chapter">Installation</a></p>
@@ -120,7 +139,7 @@ drop me an <a class="reference external" href="mailto:jnrowe&#37;&#52;&#48;gmail
 <div id="searchbox" style="display: none">
   <h3>Quick search</h3>
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" size="18" />
+      <input type="text" name="q" />
       <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
@@ -144,8 +163,8 @@ drop me an <a class="reference external" href="mailto:jnrowe&#37;&#52;&#48;gmail
              >index</a></li>
         <li class="right" >
           <a href="installation.html" title="Installation"
-             >next</a> |</li>
-    <li><a href="#">jnrowe-fixes Documentation</a> &raquo; </li>
+             >next</a> &nbsp; &nbsp;</li>
+    <li><a href="#">jnrowe-fixes documentation</a> &raquo;</li>
  
       </ul>
     </div>
@@ -153,7 +172,8 @@ drop me an <a class="reference external" href="mailto:jnrowe&#37;&#52;&#48;gmail
 
     <div class="footer">
         &copy; Copyright 2011, James Rowe.
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
     </div>
+    <!-- cloud_sptheme 1.4 -->
   </body>
 </html>
