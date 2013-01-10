@@ -1,6 +1,12 @@
 jnrowe-fixes
 ============
 
+.. warning::
+   This repository is unmaintained as - like many others - I've completely lost
+   interest in submitting fixes to Gentoo.  If you're inside the EADS firewall
+   you'll find fixes against upstream's tree in the shared ``gentoo-fixes``
+   repository.
+
 Packages with fixes submitted to the `Gentoo BTS`_ that have yet to be
 applied.  Its main purpose is my staging ground, so I can separately
 manage upstreamed fixes.
